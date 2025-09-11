@@ -18,7 +18,7 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 # ------------------------------
 # Gemini API setup
 # ------------------------------
-API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY_HERE")   # 🔑 Get API key from environment
+API_KEY = ""  # 🔑 Get API key from environment
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel("gemini-2.0-flash")
